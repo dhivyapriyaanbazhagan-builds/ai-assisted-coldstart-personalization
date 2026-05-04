@@ -1,0 +1,49 @@
+[
+ {
+ "id": "s1",
+ "name": "true_cold_start",
+ "events": [],
+ "expected_modules": ["hero_onboarding", "trending_products", "popular_categories"]
+ },
+ {
+ "id": "s2",
+ "name": "first_click_sports",
+ "events": [
+ {"type": "view", "item": "running shoes"}
+ ],
+ "expected_modules": ["sports_essentials", "running_gear", "recently_viewed"]
+ },
+ {
+ "id": "s3",
+ "name": "first_click_premium",
+ "events": [
+ {"type": "view", "item": "premium watch"}
+ ],
+ "expected_modules": ["premium_picks", "luxury_accessories", "recently_viewed"]
+ },
+ {
+ "id": "s4",
+ "name": "gift_search",
+ "events": [
+ {"type": "search", "query": "gift"}
+ ],
+ "expected_modules": ["gift_guide", "gift_bundles", "recently_viewed"]
+ },
+ {
+ "id": "s5",
+ "name": "sale_banner_click",
+ "events": [
+ {"type": "click", "item": "sale banner"}
+ ],
+ "expected_modules": ["deals", "under_budget", "recently_viewed"]
+ },
+ {
+ "id": "s6",
+ "name": "two_clicks_mixed_intent",
+ "events": [
+ {"type": "view", "item": "running shoes"},
+ {"type": "search", "query": "gift"}
+ ],
+ "expected_modules": ["recently_viewed", "gift_guide", "sports_essentials"]
+ }
+]
